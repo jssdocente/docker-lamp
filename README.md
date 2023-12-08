@@ -4,26 +4,28 @@ Watch the video 👇
 
 # docker-lamp
 
-Docker with Apache, MySQL 8.0, PHPMyAdmin and PHP.
+Docker con Apache, MySQL 8.0, PHPMyAdmin y PHP.
 
-I use docker-compose as an orchestrator. To run these containers:
+Se ha usado docker-compose como orquestador. Para ejecutar estos contenedores:
 
 ```
 docker-compose up -d
 ```
 
-Open phpmyadmin at [http://127.0.0.1:8000](http://127.0.0.1:8000)
-Open web browser to look at a simple php example at [http://127.0.0.1:80](http://127.0.0.1:80)
+Abre phpmyadmin en [http://127.0.0.1:8000](http://127.0.0.1:8000)
+Abrir el navegador web para ver un ejemplo simple de php en [http://127.0.0.1:8001](http://127.0.0.1:8001)
 
-Clone YourProject on `www/` and then, open web [http://127.0.0.1/YourProject](http://127.0.0.1/YourProject)
+Si quieres incorporar tu proyecto PHP, clona tu proyecto en `www/` y luego abre la web [http://127.0.0.1:8001/YourProject](http://127.0.0.1:8001/YourProject)
 
-Run MySQL client:
+Ejecutar MySQL client en el contenedor de MySQL, a través de command-line:
 
 - `docker-compose exec db mysql -u root -p` 
+  
+También puedes usar PHPMyAdmin en [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-Infrastructure as code!
+Infrastructure como código!
 
-You can read this a Spanish article in Crashell platform: [Apache, PHP, MySQL y PHPMyAdmin con Docker LAMP](https://www.crashell.com/estudio/apache_php_mysql_y_phpmyadmin_con_docker_lamp).
+Puedes leer este articulo in Crashell platform: [Apache, PHP, MySQL y PHPMyAdmin con Docker LAMP](https://www.crashell.com/estudio/apache_php_mysql_y_phpmyadmin_con_docker_lamp).
 
 
 ### Infrastructure model
